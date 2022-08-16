@@ -1,0 +1,13 @@
+number_of_tickets = int(input('Введите количество посетителей:\n'))
+list_of_ages = []
+invoice = 0
+for i in range(number_of_tickets):
+    list_of_ages.append(int(input(f'Введите возраст посетителя номер {i+1}:\n')))
+for elem in list_of_ages:
+    if elem < 18:
+        continue
+    elif 18 <= elem < 25:
+        invoice += 990
+    else:
+        invoice += 1390
+print(invoice if len(list_of_ages) <= 3 else float(0.9)*invoice)
