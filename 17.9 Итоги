@@ -1,4 +1,4 @@
-def sort_array(arr): #функция, осуществляющая сортировку вставками
+def sort_array(arr): # функция, осуществляющая сортировку вставками
     for i in range(1, len(arr)):
         x = arr[i]
         idx = i
